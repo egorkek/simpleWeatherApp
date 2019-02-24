@@ -1,0 +1,14 @@
+.Weather{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.Weather img{
+    height: 90px;
+}
+
+.Weather span{
+    color: darkred;
+    font-weight: bolder
+}
