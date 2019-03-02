@@ -9,6 +9,11 @@ export default function rootReducer(state = initialState, action){
                 ...state,
                 ...action.payload
         }
+        case 'FIND_CURRENT_CITY':
+        return{
+            ...state,
+            ...action.payload
+        }
 
         
 

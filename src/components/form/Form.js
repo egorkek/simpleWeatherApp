@@ -8,13 +8,11 @@ class Form extends React.Component{
      onKeek= (e, key)=>{
         e.preventDefault();
         const city = e.target.elements.city.value
-        // console.log(this.props.checkWeather);
          this.props.checkWeather(city, key)
          
 
 
         
-        // this.props.checkWeather(city, key)
 
     }
 

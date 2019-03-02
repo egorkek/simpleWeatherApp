@@ -2,7 +2,9 @@
 
 .Layout{
     font-family: "Open Sans", serif;
-    background: linear-gradient(to right, #e67e22, #e74c3c);
+    /* background: linear-gradient(to right, #e67e22, #e74c3c); */
+    /* background-image: url('../../images/night.jpg'); */
+
     letter-spacing: 2px;
     display: flex;
     padding: 0;
@@ -11,8 +13,21 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    transition: all 1.5s ease-in-out;
+
     
 }
+
+.Night{
+    background-image: url('../../images/night.jpg')
+}
+
+.Day{
+    background-image: url('../../images/day.jpg');
+
+    
+}
+
 .Layout main{
     color: #fff;
 

@@ -3,7 +3,6 @@ import classes from './Weather.css'
 
 
 const Weather = (props)=>{
-    console.log(props);
     
 
     return(
@@ -14,7 +13,7 @@ const Weather = (props)=>{
                 <p><span>Condition: </span>{props.condition} </p>
                 <p><span>Humidity: </span>{props.humidity}%</p>
             </div>
-            <img src={`https:${props.image}`}/>
+            <img src={`https:${props.image}`} alt={props.condition}/>
         </div>
     )
 }

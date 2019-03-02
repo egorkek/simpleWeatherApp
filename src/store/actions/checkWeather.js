@@ -43,7 +43,6 @@ export default function checkWeather(city, key){
         await fetch(`https://api.apixu.com/v1/current.json?key=${key}&q=${city}`)
             .then(async res=> await res.json())
             .then(obj=>{
-                console.log(obj)
                 
                 
                 newData={
@@ -53,6 +52,8 @@ export default function checkWeather(city, key){
                 temperature: obj.current.temp_c,
                 condition: obj.current.condition.text,
                 image: obj.current.condition.icon,
+                isDay: obj.current.is_day,
+
                 err: undefined
             }
 
@@ -64,7 +65,6 @@ export default function checkWeather(city, key){
                 }
                 alert(newData.err)
             });
-            console.log(newData)
 
         
         dispatch(forReducer(newData))
